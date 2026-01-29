@@ -67,8 +67,44 @@
    margin-top: 40px;
    
 }
+.img{
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+}
 @media (max-width: 600px) {
   .section2 {
     grid-template-columns:repeat(1,1fr);
   }
+}
+.section3{ 
+    width: 100%;
+     justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    height: 400px;
+     background-color: #f0e8e8;
+}
+.section3_box{
+ padding: 30px;
+   text-align: center;
+}
+.section3 h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.section3 p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.section3 button{
+    cursor: pointer;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(41, 72, 75);
+    border: none;
+    border-radius: 5px;
+}
+.section3 button:hover{
+    background-color: orange;
 }
