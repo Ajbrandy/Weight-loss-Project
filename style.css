@@ -280,7 +280,8 @@ body {
 /* .......SECTION 3....... */
 .section3_content {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     padding: 90px;
 
 
@@ -341,6 +342,7 @@ body {
     color: #f38252;
     font-size: 30px;
 }
+/* }
 .section1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -457,4 +459,4 @@ body {
 }
 .section3 button:hover{
     background-color: orange;
-}
+} */
