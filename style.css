@@ -300,7 +300,8 @@ body {
     margin-top: 24px;
     gap: 20px;
 }
-.section3_card h4{
+
+.section3_card h4 {
     font-size: 21px;
     color: #333636;
     margin-top: 20px;
@@ -318,32 +319,151 @@ body {
 
 /* .......SECTION 4....... */
 
-.section4_left{
+.section4_left {
     display: flex;
     justify-content: center;
 }
-.section4_left h2{
+
+.section4_left h2 {
     text-align: center;
     font-size: 24px;
 
 }
-.section4_right{
+
+.section4_right {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-.section4_buttom{
+
+.section4_buttom {
     text-align: center;
     padding: 20px;
 }
-.section4_right h2{
+
+.section4_right h2 {
     color: #f38252;
     font-size: 30px;
 }
 
-@media (max-width: 1024px){
-    .navigation{
-        
+@media (max-width: 1024px) {
+
+    /* NAV */
+    .nav_logo img {
+        width: 180px;
+    }
+
+    /* HERO */
+    .hero_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero_text,
+    .hero_img {
+        width: 100%;
+    }
+
+    .hero_img img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+        height: auto;
+    }
+
+    .hero_text {
+        padding: 30px;
+        margin-top: 40px;
+    }
+}
+
+
+/* SECTION 1 */
+.section1_container {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 100px 0px;
+}
+.section1_img,
+.section1_text{
+    width: 100%;
+    text-align: center;
+
+}
+
+/* SECTION 2 */
+.section2_container {
+    flex-direction: column;
+    width: 90%;
+}
+  .section2_img,
+  .section2_text {
+    width: 100%;
+    height: auto;
+  }
+
+
+/* SECTION 3 (GRID) */
+.section3_content {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px;
+}
+
+.section4_container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 60px;
+
+}
+
+/* .......For Mobile...... */
+@media (max-width: 600px) {
+
+    /* NAV */
+    .nav_links {
+        display: none;
+        /* hide menu for now */
+    }
+
+    .nav_logo img {
+        width: 150px;
+    }
+
+    /* HERO */
+    .hero_text h2 {
+        font-size: 28px;
+    }
+
+    .hero_text {
+        padding: 20px;
+    }
+
+    /* SECTION 1 */
+    .section1_container {
+        flex-direction: column;
+        padding: 80px 20px;
+    }
+
+    .section1_img,
+    .section1_text {
+        width: 100%;
+    }
+
+    /* SECTION 2 */
+    .section2_container {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .section2_text,
+    .section2_img {
+        width: 100%;
+    }
+
+    /* SECTION 3 (GRID) */
+    .section3_content {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
     }
 }
